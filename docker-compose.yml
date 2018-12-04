@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+    starter-web:
+        image: nginx:1.11
+        container_name: starter-web
+        working_dir: /var/www
+        volumes:
+            - ./docker/default.conf:/etc/nginx/conf.d/default.conf
+            - ./docker/nginx.conf:/etc/nginx/nginx.conf
+            - ./static:/var/www
+        ports:
+            - 80:80
+
+    starter-jekyll:
+        image: jekyll/jekyll:latest
+        container_name: starter-jekyll
+        working_dir: /srv/jekyll
+        volumes:
+            - ./:/srv/jekyll
+            - ./vendor/bundle:/usr/local/bundle
+            - ./static:/var/www
+        command: jekyll build --watch --incremental --force_polling
+        ports:
+            - 4000:4000
+        links:
+            - starter-web

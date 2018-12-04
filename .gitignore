@@ -1,0 +1,7 @@
+# node
+node_modules
+./assets/js
+./assets/css
+
+# docker
+docker-compose.override.yml

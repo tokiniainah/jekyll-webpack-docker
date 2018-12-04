@@ -1,0 +1,41 @@
+/* ---------------------------------------------------------------------------
+ * Base layouts style
+ * --------------------------------------------------------------------------- */
+* {
+    &,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        outline: 0;
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-moz-focus-inner {
+    outline: 0;
+    border: 0;
+}
+
+body {
+    @add-mixin font-futura-bt;
+    font-size: var(--font-size-default);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--color-black);
+}
+
+a,
+button {
+    font-size: var(--font-size-default);
+    text-decoration: underline;
+    color: var(--color-black);
+    cursor: pointer;
+}

@@ -1,0 +1,55 @@
+/* ---------------------------------------------------------------------------
+ * All the variables
+ * --------------------------------------------------------------------------- */
+
+/* Extra small devices */
+@custom-media --very-small (min-width: 360px);
+
+/* Extra small devices */
+@custom-media --extra-small (min-width: 480px);
+
+/* Small devices */
+@custom-media --small (min-width: 576px);
+
+/* Tablet */
+@custom-media --tablet (min-width: 768px);
+
+/* Medium */
+@custom-media --medium (min-width: 992px);
+
+/* Desktops */
+@custom-media --large (min-width: 1024px);
+
+/* Large desktops */
+@custom-media --extra-large (min-width: 1280px);
+
+/* Main break */
+@custom-media --break (min-width: 1380px);
+
+:root {
+
+    /* Color palette */
+    --color-white: #ffffff;
+    --color-pale-teal: #88d19c;
+    --color-black: #000000;
+
+    /* Fonts */
+    --font-futura: 'Futura', arial, sans-serif;
+    --font-futura-bold: 'Futura-Bold', arial, sans-serif;
+    --font-futura-bt-book: 'FuturaBT-Book', arial, sans-serif;
+    --font-futura-bt: 'FuturaBT', arial, sans-serif;
+    --font-futura-bt-bold: 'FuturaBT-Bold', arial, sans-serif;
+    --font-futura-bt-light: 'FuturaBT-Light', arial, sans-serif;
+    --font-banco-light: 'Banco-Light', arial, sans-serif;
+    --font-size-default: 1em;
+    --font-black: 900;
+    --font-bold: 700;
+    --font-semibold: 600;
+    --font-medium: 500;
+    --font-light: 300;
+
+    /* Box model */
+    --container-max: 1180px;
+    --container-full: 1320px;
+    --space-base: 15px;
+}

@@ -1,0 +1,38 @@
+/* ---------------------------------------------------------------------------
+ * Mixins
+ * --------------------------------------------------------------------------- */
+
+@define-mixin font-futura {
+    font-family: var(--font-futura);
+    font-weight: normal;
+}
+
+@define-mixin font-futura-bold {
+    font-family: var(--font-futura-bold);
+    font-weight: var(--font-bold);
+}
+
+@define-mixin font-futura-bt-book {
+    font-family: var(--font-futura-bt-book);
+    font-weight: normal;
+}
+
+@define-mixin font-futura-bt {
+    font-family: var(--font-futura-bt);
+    font-weight: normal;
+}
+
+@define-mixin font-futura-bt-bold {
+    font-family: var(--font-futura-bt-bold);
+    font-weight: var(--font-bold);
+}
+
+@define-mixin font-futura-bt-light {
+    font-family: var(--font-futura-bt-light);
+    font-weight: var(--font-light);
+}
+
+@define-mixin font-banco-light {
+    font-family: var(--font-banco-light);
+    font-weight: normal;
+}

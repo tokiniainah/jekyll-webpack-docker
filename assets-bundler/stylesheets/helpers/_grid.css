@@ -1,0 +1,92 @@
+/* ---------------------------------------------------------------------------
+ * Grid layouts
+ * --------------------------------------------------------------------------- */
+.container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--space-base);
+    position: relative;
+
+    @media (--large) {
+        width: calc(100% - (2 * var(--space-base)));
+    }
+
+    &-fluid {
+        width: 100%;
+    }
+
+    &-full {
+        max-width: var(--container-full);
+        margin: 0 auto;
+        padding: 0 var(--space-base);
+        width: 100%;
+
+        @media (--large) {
+            width: calc(100% - (2 * var(--space-base)));
+        }
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-left: -var(--space-base);
+    margin-right: -var(--space-base);
+
+    &--items-center {
+        justify-content: center;
+    }
+}
+
+.col {
+
+    @media (--small) {
+        &-sm-47 {
+            flex: 0 0 47%;
+            max-width: 47%;
+        }
+    }
+
+    @for $i from 1 to 12 {
+        &-$i {
+            flex: 0 0 percentage($i / 12);
+            max-width: percentage($i / 12);
+        }
+
+        @media (--extra-small) {
+            &-xs-$i {
+                flex: 0 0 percentage($i / 12);
+                max-width: percentage($i / 12);
+            }
+        }
+
+        @media (--small) {
+            &-sm-$i {
+                flex: 0 0 percentage($i / 12);
+                max-width: percentage($i / 12);
+            }
+        }
+
+        @media (--medium) {
+            &-md-$i {
+                flex: 0 0 percentage($i / 12);
+                max-width: percentage($i / 12);
+            }
+        }
+
+        @media (--large) {
+            &-lg-$i {
+                flex: 0 0 percentage($i / 12);
+                max-width: percentage($i / 12);
+            }
+        }
+
+        @media (--extra-large) {
+            &-xl-$i {
+                flex: 0 0 percentage($i / 12);
+                max-width: percentage($i / 12);
+            }
+        }
+    }
+}
