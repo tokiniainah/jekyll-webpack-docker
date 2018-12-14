@@ -1,3 +1,7 @@
+# jekyll
+.jekyll-metadata
+/static/
+
 # node
 node_modules
 ./assets/js
