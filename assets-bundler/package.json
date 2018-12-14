@@ -9,7 +9,7 @@
     "test": "echo test npm",
     "prod": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --watch-poll --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
     "eslint": "node node_modules/eslint/bin/eslint ./javascript/*.js --fix --debug",
     "stylelint": "node node_modules/stylelint/bin/stylelint ./stylesheets/**/*.css --fix"
   },
